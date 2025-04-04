@@ -34,7 +34,7 @@
 */
 
 // Define base and accent colors
-$base-color: #3498db;
+$base-color: #f48e5f;
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
@@ -689,6 +689,75 @@ footer {
 }
 
 /*
+    ---------------------------------
+    ----- 9. Certificate Styles -----
+    ---------------------------------
+*/
+/*
+    ---------------------------------
+    --------- To be revised ---------
+    ---------------------------------
+*/
+
+#certificates {
+    padding: 50px 15px;
+    border-bottom: 1px solid $border;
+    text-align: center;
+
+    h2 {
+        color: $heading;
+        margin-bottom: 50px;
+    }
+}
+
+.certificate {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.certificate-image {
+    float: left;
+}
+
+.certificate-info {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 300px;
+    padding: 15px;
+
+    h3 {
+        font-size: 1.5em;
+        font-weight: 300;
+        color: $heading;
+        margin: 0 0 15px 0;
+    }
+
+    p {
+        color: $text;
+        margin: 0 0 15px 0;
+        font-size: 0.9em;
+    }
+}
+
+.no-image {
+    .certificate-info {
+        position: relative;
+        margin: 0;
+        padding: 30px 15px;
+        transform: none;
+    }
+}
+
+#more-certificates {
+    display: none;
+}
+
+/*
     -------------------------------
     ----- 9. Skills Styles -----
     -------------------------------
@@ -963,6 +1032,18 @@ footer {
     }
 
     .project-info {
+        position: relative;
+        margin: 0;
+        padding: 30px 15px;
+        top: auto;
+        transform: none;
+    }
+
+    .certificate-image {
+        display: none;
+    }
+
+    .certificate-info {
         position: relative;
         margin: 0;
         padding: 30px 15px;
